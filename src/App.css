@@ -36,3 +36,30 @@
     transform: rotate(360deg);
   }
 }
+
+.banner{
+  background-color: #fef000;
+  height: 60vh;
+  margin: 1rem;
+}
+.keyboard{
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.keys{
+  margin: 0rem 0.5rem 0rem 0rem;
+  height: 6rem;
+  width: 2rem;
+}
+.keys:nth-child(odd)
+{
+    color: white;
+    background-color: black;
+}
+.keys:nth-child(even)
+{ 
+  color: black;
+  background-color:white;
+}
