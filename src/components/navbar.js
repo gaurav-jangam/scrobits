@@ -1,9 +1,49 @@
-import React from 'react'
+import React, { useState } from 'react';
+import {
+  MDBContainer,
+  MDBCollapse,
+  MDBNavbar,
+  MDBNavbarToggler,
+  MDBIcon,
+  MDBBtn,
+} from 'mdb-react-ui-kit';
+import Logo from "../logo.jpg";
 
-function navbar() {
+export default function Navbar() {
+  const [showNavExternal3, setShowNavExternal3] = useState(false);
+
   return (
-    <div>navbar</div>
-  )
-}
+    <>
+      <MDBNavbar>
+        <MDBContainer fluid>
+        <img className='logo' src={Logo} />
 
-export default navbar
+          <MDBNavbarToggler
+            className="navbar-toggler me-auto"
+            type='button'
+            data-target='#navbarToggleExternalContent'
+            aria-controls='navbarToggleExternalContent'
+            aria-expanded='false'
+            aria-label='Toggle navigation'
+            onClick={() => setShowNavExternal3(!showNavExternal3)}
+          >
+            <MDBIcon className='me-3' icon='bars' fas />
+            Vitthalai Printing Press
+          </MDBNavbarToggler>
+        </MDBContainer>
+      </MDBNavbar>
+
+      <MDBCollapse show={showNavExternal3}>
+        <div className='shadow-3 pt-1'>
+          <MDBBtn block className='border-bottom m-0' color='link'>
+            Link 1
+          </MDBBtn>
+          <MDBBtn block className='border-bottom m-0' color='link'>
+            Link 2
+          </MDBBtn>
+          
+        </div>
+      </MDBCollapse>
+    </>
+  );
+}
