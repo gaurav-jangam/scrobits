@@ -10,6 +10,7 @@
     "material-design-for-react": "^0.0.109",
     "mdbootstrap": "^4.20.0",
     "postcss": "^8.4.21",
+    "postcss-preset-env": "^8.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
