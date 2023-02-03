@@ -53,6 +53,9 @@
   height: 6.5rem;
   width: 2rem;
 }
+.keys:last-child {
+  margin: 0 0rem 0 0;
+} 
 .keys:nth-child(odd)
 {
     color: white;
@@ -62,4 +65,8 @@
 { 
   color: black;
   background-color:white;
+}
+.logo{
+  border-radius: 50% 0% 50% 50%;
+  width: 3rem;
 }

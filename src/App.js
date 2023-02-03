@@ -1,11 +1,13 @@
 import './App.css';
 import Banner from './components/banner';
-//digvijay.jadhav@scrobits.com
+import Navbar from './components/navbar';
+// email: digvijay.jadhav@scrobits.com
 
 
 function App() {
   return (
     <div className="App">
+      <Navbar />
       <Banner />
     </div>
   );

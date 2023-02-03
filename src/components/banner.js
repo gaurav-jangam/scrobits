@@ -7,7 +7,7 @@ function Banner() {
     <div className='banner'>
         <div className='keyboard'>
             {data.map((data1) => 
-                <div className="keys">
+                <div key={data1} className="keys">
                     {data1}
                 </div>
             )}
