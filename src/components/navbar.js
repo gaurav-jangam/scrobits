@@ -16,7 +16,7 @@ export default function Navbar() {
     <>
       <MDBNavbar>
         <MDBContainer fluid>
-        <img className='logo' src={Logo} />
+        <img className='logo' src={Logo} alt="logo" />
 
           <MDBNavbarToggler
             className="navbar-toggler me-auto"
